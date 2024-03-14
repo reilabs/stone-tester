@@ -1,11 +1,11 @@
 # CAIRO 1
-/home/giuseppe/.cargo/bin/cairo-compile --single-file one.cairo one.sierra --replace-ids
-/home/giuseppe/.cargo/bin/sierra-compile one.sierra one.casm
+~/.cargo/bin/cairo-compile --single-file one.cairo one.sierra --replace-ids
+~/.cargo/bin/sierra-compile one.sierra one.casm
 cairo1-run one.cairo \
-    --trace_file /home/giuseppe/hints_files/one.trace \
-    --memory_file /home/giuseppe/hints_files/one.memory \
-    --air_public_input /home/giuseppe/hints_files/one_public_input.json \
-    --air_private_input /home/giuseppe/hints_files/one_private_input.json \
+    --trace_file=one.trace \
+    --memory_file=one.memory \
+    --air_public_input=one_public_input.json \
+    --air_private_input=one_private_input.json \
     --layout plain \
     --proof_mode
 
@@ -28,11 +28,6 @@ cairo-run \
     --layout=plain \
     --trace_file=zero.trace \
     --memory_file=zero.memory \
-    --print_output \
-    --print_memory \
-    --relocate_prints \
-    --print_info \
-    --print_segments \
     --proof_mode
 
 cpu_air_prover \
