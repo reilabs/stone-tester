@@ -1,0 +1,119 @@
+{
+  "layout": "plain",
+  "rc_min": 32766,
+  "rc_max": 32769,
+  "n_steps": 16,
+  "memory_segments": {
+    "program": {
+      "begin_addr": 1,
+      "stop_ptr": 3
+    },
+    "execution": {
+      "begin_addr": 23,
+      "stop_ptr": 34
+    }
+  },
+  "public_memory": [
+    {
+      "address": 1,
+      "value": "0x1104800180018000",
+      "page": 0
+    },
+    {
+      "address": 2,
+      "value": "0x4",
+      "page": 0
+    },
+    {
+      "address": 3,
+      "value": "0x10780017fff7fff",
+      "page": 0
+    },
+    {
+      "address": 4,
+      "value": "0x0",
+      "page": 0
+    },
+    {
+      "address": 5,
+      "value": "0x1104800180018000",
+      "page": 0
+    },
+    {
+      "address": 6,
+      "value": "0x3",
+      "page": 0
+    },
+    {
+      "address": 7,
+      "value": "0x208b7fff7fff7ffe",
+      "page": 0
+    },
+    {
+      "address": 8,
+      "value": "0x1104800180018000",
+      "page": 0
+    },
+    {
+      "address": 9,
+      "value": "0x3",
+      "page": 0
+    },
+    {
+      "address": 10,
+      "value": "0x208b7fff7fff7ffe",
+      "page": 0
+    },
+    {
+      "address": 11,
+      "value": "0x480680017fff8000",
+      "page": 0
+    },
+    {
+      "address": 12,
+      "value": "0x101",
+      "page": 0
+    },
+    {
+      "address": 13,
+      "value": "0x484480017fff8000",
+      "page": 0
+    },
+    {
+      "address": 14,
+      "value": "0x101",
+      "page": 0
+    },
+    {
+      "address": 15,
+      "value": "0x484480017fff8000",
+      "page": 0
+    },
+    {
+      "address": 16,
+      "value": "0x101",
+      "page": 0
+    },
+    {
+      "address": 17,
+      "value": "0x48507fff7fff8000",
+      "page": 0
+    },
+    {
+      "address": 18,
+      "value": "0x48507ffe7fff8000",
+      "page": 0
+    },
+    {
+      "address": 19,
+      "value": "0x208b7fff7fff7ffe",
+      "page": 0
+    },
+    {
+      "address": 20,
+      "value": "0x208b7fff7fff7ffe",
+      "page": 0
+    }
+  ],
+  "dynamic_params": null
+}

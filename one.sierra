@@ -1,0 +1,33 @@
+type felt252 = felt252 [storable: true, drop: true, dup: true, zero_sized: false];
+type Unit = Struct<ut@Tuple> [storable: true, drop: true, dup: true, zero_sized: true];
+
+libfunc function_call<user@one::one::_main> = function_call<user@one::one::_main>;
+libfunc drop<felt252> = drop<felt252>;
+libfunc struct_construct<Unit> = struct_construct<Unit>;
+libfunc felt252_const<257> = felt252_const<257>;
+libfunc dup<felt252> = dup<felt252>;
+libfunc store_temp<felt252> = store_temp<felt252>;
+libfunc felt252_mul = felt252_mul;
+
+function_call<user@one::one::_main>() -> ([0]); // 0
+drop<felt252>([0]) -> (); // 1
+struct_construct<Unit>() -> ([1]); // 2
+return([1]); // 3
+felt252_const<257>() -> ([0]); // 4
+dup<felt252>([0]) -> ([0], [1]); // 5
+dup<felt252>([0]) -> ([0], [2]); // 6
+store_temp<felt252>([1]) -> ([1]); // 7
+felt252_mul([1], [2]) -> ([3]); // 8
+store_temp<felt252>([3]) -> ([3]); // 9
+felt252_mul([3], [0]) -> ([4]); // 10
+store_temp<felt252>([4]) -> ([4]); // 11
+dup<felt252>([4]) -> ([4], [5]); // 12
+dup<felt252>([4]) -> ([4], [6]); // 13
+felt252_mul([5], [6]) -> ([7]); // 14
+store_temp<felt252>([7]) -> ([7]); // 15
+felt252_mul([7], [4]) -> ([8]); // 16
+store_temp<felt252>([8]) -> ([8]); // 17
+return([8]); // 18
+
+one::one::main@0() -> (Unit);
+one::one::_main@4() -> (felt252);
