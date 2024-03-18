@@ -1,4 +1,7 @@
 {
     "trace_path": "/home/giuseppe/hints_files/zero.trace",
-    "memory_path": "/home/giuseppe/hints_files/zero.memory"
+    "memory_path": "/home/giuseppe/hints_files/zero.memory",
+    "pedersen": [],
+    "range_check": [],
+    "ecdsa": []
 }

@@ -5,11 +5,11 @@
             "fri_step_list": [
                 0,
                 1,
-                1,
-                1,
-                1,
-                1,
-                1,
+                2,
+                2,
+                2,
+                2,
+                2,
                 2
             ],
             "last_layer_degree_bound": 1,

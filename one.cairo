@@ -1,5 +1,5 @@
-fn main() {
-    _main();
+fn main() -> felt252 {
+    _main()
 }
 
 fn _main() -> felt252 {
