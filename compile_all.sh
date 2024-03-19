@@ -1,6 +1,12 @@
 # CAIRO 1
 ~/.cargo/bin/cairo-compile --single-file one.cairo one.sierra --replace-ids
 ~/.cargo/bin/sierra-compile one.sierra one.casm
+~/.cargo/bin/cairo-run --single-file one.cairo
+
+#cd ~/lambdaworks/provers/cairo
+#cargo run --release --features=cli,instruments,parallel prove /home/giuseppe/hints_files/one.trace /home/giuseppe/hints_files/one.memory /home/giuseppe/hints_files/one.proof
+#cargo run --release --features=cli,instruments,parallel verify /home/giuseppe/hints_files/one.proof
+#exit
 
 cairo1-run one.cairo \
     --trace_file=one.trace \
@@ -10,15 +16,15 @@ cairo1-run one.cairo \
     --layout=small \
     --proof_mode
 
-cpu_air_prover \
+/home/giuseppe/stone-prover/cpu_air_prover \
     --out_file=one.proof \
     --private_input_file=one_private_input.json \
     --public_input_file=one_public_input.json \
     --prover_config_file=cpu_air_prover_config.json \
     --parameter_file=cpu_air_params.json
+#exit
 
-
-cpu_air_verifier --in_file=one.proof && echo "Successfully verified one.proof"
+/home/giuseppe/stone-prover/cpu_air_verifier --in_file=one.proof && echo "Successfully verified one.proof"
 
 # CAIRO 0
 . ${PYENV_ROOT}/versions/.venv/bin/activate
@@ -32,11 +38,11 @@ cairo-run \
     --memory_file=zero.memory \
     --proof_mode
 
-cpu_air_prover \
+/home/giuseppe/stone-prover/cpu_air_prover \
     --out_file=zero.proof \
     --private_input_file=zero_private_input.json \
     --public_input_file=zero_public_input.json \
     --prover_config_file=cpu_air_prover_config.json \
     --parameter_file=cpu_air_params.json
 
-cpu_air_verifier --in_file=zero.proof && echo "Successfully verified zero.proof"
+/home/giuseppe/stone-prover/cpu_air_verifier --in_file=zero.proof && echo "Successfully verified zero.proof"

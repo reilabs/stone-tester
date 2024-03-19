@@ -1,7 +1,7 @@
 {
     "layout": "small",
     "rc_min": 32765,
-    "rc_max": 32770,
+    "rc_max": 32769,
     "n_steps": 512,
     "memory_segments": {
         "program": {
@@ -9,24 +9,24 @@
             "stop_ptr": 5
         },
         "execution": {
-            "begin_addr": 30,
-            "stop_ptr": 37
+            "begin_addr": 24,
+            "stop_ptr": 35
         },
         "output": {
-            "begin_addr": 37,
-            "stop_ptr": 40
+            "begin_addr": 35,
+            "stop_ptr": 36
         },
         "pedersen": {
-            "begin_addr": 40,
-            "stop_ptr": 40
+            "begin_addr": 36,
+            "stop_ptr": 36
         },
         "range_check": {
-            "begin_addr": 232,
-            "stop_ptr": 232
+            "begin_addr": 228,
+            "stop_ptr": 228
         },
         "ecdsa": {
-            "begin_addr": 296,
-            "stop_ptr": 296
+            "begin_addr": 292,
+            "stop_ptr": 292
         }
     },
     "public_memory": [
@@ -62,142 +62,102 @@
         },
         {
             "address": 7,
-            "value": "0x400680017fff8000",
+            "value": "0x1104800180018000",
             "page": 0
         },
         {
             "address": 8,
-            "value": "0x64",
+            "value": "0x6",
             "page": 0
         },
         {
             "address": 9,
-            "value": "0x480280007ffd8000",
+            "value": "0x400280007ffd7fff",
             "page": 0
         },
         {
             "address": 10,
-            "value": "0x400680017fff8000",
-            "page": 0
-        },
-        {
-            "address": 11,
-            "value": "0xc8",
-            "page": 0
-        },
-        {
-            "address": 12,
-            "value": "0x480280017ffd8000",
-            "page": 0
-        },
-        {
-            "address": 13,
-            "value": "0x400680017fff8000",
-            "page": 0
-        },
-        {
-            "address": 14,
-            "value": "0x12c",
-            "page": 0
-        },
-        {
-            "address": 15,
-            "value": "0x480280027ffd8000",
-            "page": 0
-        },
-        {
-            "address": 16,
             "value": "0x482680017ffd8000",
             "page": 0
         },
         {
-            "address": 17,
-            "value": "0x3",
+            "address": 11,
+            "value": "0x1",
             "page": 0
         },
         {
-            "address": 18,
+            "address": 12,
             "value": "0x208b7fff7fff7ffe",
             "page": 0
         },
         {
-            "address": 19,
+            "address": 13,
             "value": "0x480680017fff8000",
             "page": 0
         },
         {
-            "address": 20,
+            "address": 14,
             "value": "0x101",
             "page": 0
         },
         {
-            "address": 21,
+            "address": 15,
             "value": "0x484480017fff8000",
             "page": 0
         },
         {
-            "address": 22,
+            "address": 16,
             "value": "0x101",
             "page": 0
         },
         {
-            "address": 23,
+            "address": 17,
             "value": "0x484480017fff8000",
             "page": 0
         },
         {
-            "address": 24,
+            "address": 18,
             "value": "0x101",
             "page": 0
         },
         {
-            "address": 25,
+            "address": 19,
             "value": "0x48507fff7fff8000",
             "page": 0
         },
         {
-            "address": 26,
+            "address": 20,
             "value": "0x48507ffe7fff8000",
             "page": 0
         },
         {
-            "address": 27,
+            "address": 21,
             "value": "0x208b7fff7fff7ffe",
             "page": 0
         },
         {
-            "address": 28,
-            "value": "0x1e",
+            "address": 22,
+            "value": "0x18",
             "page": 0
         },
         {
-            "address": 29,
+            "address": 23,
             "value": "0x0",
             "page": 0
         },
         {
-            "address": 30,
-            "value": "0x25",
+            "address": 24,
+            "value": "0x23",
             "page": 0
         },
         {
-            "address": 36,
-            "value": "0x28",
+            "address": 34,
+            "value": "0x24",
             "page": 0
         },
         {
-            "address": 37,
-            "value": "0x64",
-            "page": 0
-        },
-        {
-            "address": 38,
-            "value": "0xc8",
-            "page": 0
-        },
-        {
-            "address": 39,
-            "value": "0x12c",
+            "address": 35,
+            "value": "0x10924547e7e54240901",
             "page": 0
         }
     ],

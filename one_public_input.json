@@ -4,6 +4,10 @@
   "rc_max": 32769,
   "n_steps": 512,
   "memory_segments": {
+    "range_check": {
+      "begin_addr": 228,
+      "stop_ptr": 228
+    },
     "program": {
       "begin_addr": 1,
       "stop_ptr": 4
@@ -12,17 +16,13 @@
       "begin_addr": 292,
       "stop_ptr": 292
     },
-    "execution": {
-      "begin_addr": 25,
-      "stop_ptr": 36
-    },
-    "range_check": {
-      "begin_addr": 228,
-      "stop_ptr": 228
-    },
     "output": {
       "begin_addr": 36,
       "stop_ptr": 37
+    },
+    "execution": {
+      "begin_addr": 25,
+      "stop_ptr": 36
     },
     "pedersen": {
       "begin_addr": 36,
